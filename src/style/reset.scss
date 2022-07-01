@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+input[type="text"] {
+  border-radius: 0;
+}
+
+/*END RESETS*/
