@@ -41,6 +41,14 @@
         /></a>
       </li>
     </ul>
+    <!--music-->
+    <div class="music" @click="play()">
+      <font-awesome-icon icon="fa-solid fa-music" />
+      <span id="musicText"> Music?</span>
+      <audio id="music">
+        <source src="../assets/michael-buble.mp3" />
+      </audio>
+    </div>
   </nav>
 </template>
 <script>
@@ -49,7 +57,23 @@ export default {
   data: function () {
     return {
       active: false,
+      musicOFF: true,
     };
+  },
+  methods: {
+    play: function () {
+      let music = document.getElementById("music");
+      let musicText = document.getElementById("musicText");
+      if (this.musicOFF) {
+        music.play();
+        musicText.innerText = " Enjoy :>";
+        this.musicOFF = false;
+      } else {
+        music.pause();
+        musicText.innerText = " okay :<";
+        this.musicOFF = true;
+      }
+    },
   },
 };
 </script>
@@ -153,7 +177,9 @@ nav {
     p {
       color: #69649c;
       text-align: center;
-      font-weight: bold;
+      font-weight: 800;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      letter-spacing: 0.6px;
       width: 100%;
       font-size: 0.8rem;
       margin-top: 1rem;
@@ -181,7 +207,7 @@ nav {
     }
   }
   .social {
-    height: 10rem;
+    height: 4rem;
     display: flex;
     justify-content: space-evenly;
     li {
@@ -194,6 +220,16 @@ nav {
         }
       }
     }
+  }
+  .music {
+    color: #69649c;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 800;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
   }
 }
 </style>

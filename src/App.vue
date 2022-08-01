@@ -14,14 +14,20 @@
     </div>
 
     <AppNavbar></AppNavbar>
-    <router-view />
-    <div id="cursor" class="cursor"></div>
+    <div class="view">
+      <router-view />
+    </div>
+    <!--goUp button-->
+    <a id="goDown" class="goDown">
+      <p>Scroll Down</p>
+
+      <font-awesome-icon icon="fa-solid fa-angles-down" />
+    </a>
   </div>
 </template>
 
 <script>
 import AppNavbar from "./components/AppNavbar.vue";
-
 export default {
   name: "App",
   data: function () {
@@ -33,25 +39,19 @@ export default {
     AppNavbar,
   },
   mounted() {
-    window.addEventListener(
-      "load",
-      () => {
-        this.loaded = true;
-      },
-      "1000ms"
-    );
-    const cursor = document.getElementById("cursor");
-    document.addEventListener("mousemove", (e) => {
-      let X = e.pageX;
-      let Y = e.pageY;
-
-      cursor.style.top = Y + "px";
-      cursor.style.left = X + "px";
-      cursor.style.display = "block";
+    //preloader
+    window.addEventListener("load", () => {
+      this.loaded = true;
     });
-    document.addEventListener("mouseout", () => {
-      cursor.style.display = "none";
-    });
+    /* //go up button
+    let goUp = document.getElementById("goDown");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        goUp.innerHTML = "<font-awesome-icon icon='fa-solid fa-angles-up' />";
+      } else {
+        goUp.style.opacity = "0";
+      }
+    }); */
   },
 };
 </script>
@@ -59,7 +59,6 @@ export default {
 @import "./style/reset.scss";
 
 #app {
-  cursor: none;
   /*preloder start*/
   .preloader {
     position: fixed;
@@ -67,7 +66,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 999;
     &.loaded {
       visibility: hidden;
       transition: all 0.3s 2s ease-in-out;
@@ -165,16 +164,59 @@ export default {
       transform: rotate(360deg);
     }
   }
-  .cursor {
+  .view {
+    margin-left: 9rem;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+  .goDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    width: 7px;
-    height: 7px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px rgb(255 255 255 / 10%),
-      0 0 0 10px rgb(255 255 255 / 10%), 0 0 20px 2px rgb(255 255 255);
-    pointer-events: none;
-    z-index: 999;
+    right: 5px;
+    bottom: 15px;
+    color: #fff;
+    padding: 10px 5px;
+    animation: go-up 1s infinite alternate;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    animation: goUpDownAnim 2s ease-in-out infinite;
+    text-decoration: none;
+    z-index: 100;
+    &:hover {
+      color: #fff;
+    }
+    p {
+      font-size: 16px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin: 0;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+    }
+    @keyframes goUpDownAnim {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    svg {
+      font-size: 20px;
+      margin: 5px 5px 0px 5px;
+      transition: all 0.2s ease-in-out;
+      color: #fff;
+      @media (max-width: 768px) {
+        font-size: 15px;
+      }
+    }
   }
 }
 </style>

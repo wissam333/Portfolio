@@ -14,9 +14,11 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faFacebook, faGithub, faLinkedin);
+library.add(faFacebook, faGithub, faLinkedin, faMusic, faAnglesDown);
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
