@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 //pages importing
-import portfolio from "../views/portfolio.vue";
+import portfolio from "../views/Portfolio.vue";
 import home from "../views/Home.vue";
 import about from "../views/About.vue";
 import skills from "../views/Skills.vue";

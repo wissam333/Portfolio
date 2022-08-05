@@ -17,10 +17,9 @@
     <div class="view">
       <router-view />
     </div>
-    <!--goUp button-->
+    <!--goDown button-->
     <a id="goDown" class="goDown">
       <p>Scroll Down</p>
-
       <font-awesome-icon icon="fa-solid fa-angles-down" />
     </a>
   </div>
@@ -184,7 +183,7 @@ export default {
     opacity: 1;
     animation: goUpDownAnim 2s ease-in-out infinite;
     text-decoration: none;
-    z-index: 100;
+    z-index: 9;
     &:hover {
       color: #fff;
     }

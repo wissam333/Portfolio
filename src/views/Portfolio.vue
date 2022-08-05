@@ -9,6 +9,7 @@
 import home from "./Home.vue";
 import skills from "./Skills.vue";
 import about from "./About.vue";
+
 export default {
   name: "portfolio",
   components: {
@@ -18,3 +19,4 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped></style>

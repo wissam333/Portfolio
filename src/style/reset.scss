@@ -14,5 +14,13 @@ ul {
 input[type="text"] {
   border-radius: 0;
 }
-
+.headline {
+  color: #696497;
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+}
 /*END RESETS*/

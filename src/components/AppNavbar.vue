@@ -14,11 +14,11 @@
     </div>
     <!---links-->
     <ul class="links">
-      <li><a href="">About</a></li>
-      <li><a href="">My Skills</a></li>
-      <li><a href="">Work</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href="">Blog</a></li>
+      <li><router-link to="/home">Home</router-link></li>
+      <li><router-link to="/skills">My Skills</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/">Contact</router-link></li>
+      <li><router-link to="/">Work</router-link></li>
     </ul>
     <!---social-->
     <ul class="social">
@@ -80,9 +80,9 @@ export default {
 <style lang="scss" scoped>
 @import "../style/reset.scss";
 .toggle {
-  width: 40px;
+  width: 45px;
   height: 35px;
-  position: absolute;
+  position: fixed;
   left: 10px;
   top: 10px;
   display: none;
@@ -107,9 +107,9 @@ export default {
   }
   span:nth-child(2) {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
-    width: 80%;
+    width: 75%;
     height: 3px;
     border-radius: 10px;
     background-color: #fff;
@@ -120,7 +120,7 @@ export default {
   }
   span:nth-child(3) {
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 3px;
