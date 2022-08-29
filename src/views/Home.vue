@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="overlay"></div>
-    <img class="sky" src="../assets/sasa.png" alt="" />
-    <img class="mountains" src="../assets/sasa2.png" alt="" />
+    <img class="sky" src="../assets/sasa.webp" alt="" />
+    <img class="mountains" src="../assets/sasa2.webp" alt="" />
     <div class="stars">
       <span></span>
       <span></span>
@@ -19,9 +19,12 @@
       <div class="container">
         <!--left-->
         <p>Hi, I'm</p>
-        <p>Wissam Najjom,</p>
+        <p class="glitch" data-glitch="Wissam Najjom,">Wissam Najjom,</p>
         <p>Front End Developer</p>
-        <button class="btn btn-md">Contact Me</button>
+
+        <button class="btn btn-md">
+          <router-link to="/contact">Contact Me </router-link>
+        </button>
       </div>
     </div>
     <div class="cv">
@@ -81,9 +84,6 @@ export default {
     bottom: 0;
     background: linear-gradient(6deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 46%));
     z-index: 3;
-    @media (max-width: 768px) {
-      background: linear-gradient(6deg, rgb(0 0 0 / 45%), rgb(0 0 0 / 75%));
-    }
   }
 
   .stars {
@@ -107,17 +107,71 @@ export default {
     @media (max-width: 768px) {
       font-size: 8.9vw;
     }
+    .glitch {
+      user-select: none;
+      position: relative;
+      &:before,
+      &:after {
+        display: block;
+        content: attr(data-glitch);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+      }
+      &:after {
+        color: #f0f;
+        z-index: -2;
+      }
+      &:before {
+        color: #0ff;
+        z-index: -1;
+      }
+      &:hover {
+        &:before {
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+        }
+        &:after {
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+            infinite;
+        }
+      }
+    }
+
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-5px, 5px);
+      }
+      40% {
+        transform: translate(-5px, -5px);
+      }
+      60% {
+        transform: translate(5px, 5px);
+      }
+      80% {
+        transform: translate(5px, -5px);
+      }
+      to {
+        transform: translate(0);
+      }
+    }
     button {
       font-size: 1.2rem;
-      color: #fff;
       border: 2px solid #fff;
       letter-spacing: 1px;
-      margin-top: 2rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
       @media (max-width: 768px) {
         font-size: 4vw;
       }
       &:hover {
-        color: #fff;
         background-color: #69649c;
       }
     }

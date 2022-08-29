@@ -1,6 +1,9 @@
 <template>
   <!--toggle button-->
-  <div class="toggle" @click="active = !active">
+  <div
+    class="toggle"
+    @click="active == true ? (active = false) : (active = true)"
+  >
     <span id="toggle1" :class="active == true ? 'active' : ''"></span>
     <span id="toggle2" :class="active == true ? 'active' : ''"></span>
     <span id="toggle3" :class="active == true ? 'active' : ''"></span>
@@ -9,16 +12,28 @@
   <nav :class="active == true ? 'active' : ''">
     <!---logo-->
     <div class="logo">
-      <img src="../assets/1.png" alt="" />
+      <img src="../assets/1.webp" alt="" />
       <p>Front End Developer</p>
     </div>
     <!---links-->
     <ul class="links">
-      <li><router-link to="/home">Home</router-link></li>
-      <li><router-link to="/skills">My Skills</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/">Contact</router-link></li>
-      <li><router-link to="/">Work</router-link></li>
+      <router-link @click="active = 'false'" to="/"><li>Home</li></router-link>
+
+      <router-link @click="active = 'false'" to="/about">
+        <li>About</li></router-link
+      >
+
+      <router-link @click="active = 'false'" to="/skills">
+        <li>My Skills</li></router-link
+      >
+
+      <router-link @click="active = 'false'" to="/contact">
+        <li>Contact</li></router-link
+      >
+
+      <router-link @click="active = 'false'" to="/work">
+        <li>Work</li></router-link
+      >
     </ul>
     <!---social-->
     <ul class="social">
@@ -186,17 +201,19 @@ nav {
     }
   }
   .links {
-    li:nth-child(1) {
-      border-top: 1px solid #282828;
-    }
-    li {
+    a {
       width: 100%;
-      border-bottom: 1px solid #282828;
       text-align: center;
       line-height: 3rem;
-      a {
-        text-decoration: none;
+      text-decoration: none;
+      &:nth-child(1) {
+        li {
+          border-top: 1px solid #282828;
+        }
+      }
+      li {
         color: #909096;
+        border-bottom: 1px solid #282828;
         font-size: 1rem;
         transition: color 0.3s;
         cursor: pointer;
@@ -230,6 +247,18 @@ nav {
     padding: 15px;
     margin-bottom: 10px;
     cursor: pointer;
+    animation: light 2s infinite;
+    @keyframes light {
+      0% {
+        color: #69649c;
+      }
+      50% {
+        color: #fff;
+      }
+      100% {
+        color: #69649c;
+      }
+    }
   }
 }
 </style>

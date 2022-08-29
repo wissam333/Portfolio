@@ -1,7 +1,11 @@
 <template>
   <div class="about">
     <div class="me row">
-      <div class="paragraph col-sm-6">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        class="paragraph col-sm-6"
+      >
         <h2 class="headline">ME, Myself And I</h2>
         <p>
           I’m a student at the University of Informatics Engineering located in
@@ -13,30 +17,45 @@
         </p>
         <br />
         <br />
-        <h2 class="headline">Interest</h2>
-        <p>
-          At my free time I like to play dota1 and watch anime, somtimes I like
-          to listen to Lo-fi music and to draw (<span>
-            this is one of my best digital drawings</span
-          >)=>
+        <h2 class="headline">Interests</h2>
+        <p class="interst_paragraph">
+          At my free time I like to play video games and to draw
+          <a
+            href="https://wissam333.github.io/Portfolio/assets/art.ed1e5563.webp"
+            target="_blank"
+            ><span> this is one of my best digital drawings </span></a
+          ><font-awesome-icon icon="fa-solid fa-arrow-right" />
         </p>
       </div>
-      <div class="artGallery col-sm-6">
-        <img src="../assets/art.jpg" alt="" />
+      <div
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="artGallery col-sm-6"
+      >
+        <img src="../assets/art.webp" alt="" />
       </div>
     </div>
   </div>
 </template>
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default {
   name: "about,",
+  mounted() {
+    AOS.init();
+  },
 };
 </script>
 <style lang="scss" scoped>
 @import "../style/reset.scss";
 .about {
+  overflow: hidden;
   background-image: linear-gradient(#0b0a0c, black);
   display: flow-root;
+  @media (min-width: 1400px) {
+    height: 100vh;
+  }
   @media (max-width: 768px) {
     padding: 30px;
   }
@@ -55,8 +74,11 @@ export default {
       p {
         font-size: 20px;
         line-height: 30px;
-        span {
-          color: #696497;
+        a {
+          text-decoration: none;
+          span {
+            color: #696497;
+          }
         }
         @media (max-width: 768px) {
           font-size: 15px;

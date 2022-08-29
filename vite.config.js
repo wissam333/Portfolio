@@ -7,9 +7,6 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   base: "/Portfolio/",
   assetsDir: "assets",
-  watch: {
-    usepolling: true,
-  },
   plugins: [vue()],
   resolve: {
     alias: {

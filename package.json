@@ -17,15 +17,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.0",
     "@popperjs/core": "^2.11.5",
-    "apexcharts": "^3.35.4",
+    "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
-    "i": "^0.3.7",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "npm": "^8.12.1",
     "pinia": "^2.0.13",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vueperslides": "^3.4.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

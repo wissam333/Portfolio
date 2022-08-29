@@ -42,15 +42,16 @@ export default {
     window.addEventListener("load", () => {
       this.loaded = true;
     });
-    /* //go up button
-    let goUp = document.getElementById("goDown");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        goUp.innerHTML = "<font-awesome-icon icon='fa-solid fa-angles-up' />";
-      } else {
-        goUp.style.opacity = "0";
+
+    //hide scroll down
+    window.onscroll = function (ev) {
+      if (
+        window.innerHeight + window.pageYOffset >=
+        document.body.offsetHeight
+      ) {
+        document.getElementById("goDown").innerHTML = "";
       }
-    }); */
+    };
   },
 };
 </script>
@@ -193,7 +194,7 @@ export default {
       text-orientation: mixed;
       margin: 0;
       @media (max-width: 768px) {
-        font-size: 13px;
+        font-size: 12px;
       }
     }
     @keyframes goUpDownAnim {

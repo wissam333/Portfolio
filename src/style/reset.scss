@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 h1,
-h2 {
+h2,
+ul {
   margin-bottom: 0;
 }
 ul {
@@ -19,6 +20,7 @@ input[type="text"] {
   font-size: 60px;
   margin-bottom: 20px;
   font-weight: bold;
+  font-family: "Kdam Thmor Pro", sans-serif;
   @media (max-width: 768px) {
     font-size: 25px;
   }
