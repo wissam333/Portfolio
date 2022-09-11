@@ -12,7 +12,7 @@
           Syria, I have a serious passion for web and mobile Application, I’m
           self-learner, hard-Worker, organized person.
           <br />
-          I’m not a UI/UX Designer (and i have no idea about it) but i like to
+          I’m not a UI/UX Designer (i will learn it soon) but i like to
           design my websites like this Portfolio
         </p>
         <br />

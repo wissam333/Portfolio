@@ -29,11 +29,12 @@
         </div>
         <div class="desc col-lg-6">
           <h2>Old website</h2>
-          <i>date: 2019</i>
+          <i>Date: 2019</i>
           <p>
             A simple design I made for training purposes using HTML, CSS, JS,
             Bootstrap and SASS, i learned a lot while coding this website,
-            spicals : animations - pure js without framwork - my design.
+            <br />
+            Spicals : animations - pure js without framwork - my design.
           </p>
           <div class="icons">
             <a href="https://github.com/wissam333/project-w" target="_blank">
@@ -49,12 +50,12 @@
       <div class="row">
         <div class="desc col-lg-6">
           <h2>Dashboard</h2>
-          <i>date: 2020</i>
+          <i>Date: 2020</i>
           <p>
-            dashboard and email designs using Vue2, Bootstrap and SASS, i
+            Dashboard and email designs using Vue2, Bootstrap and SASS, i
             learned js framework and trained to make charts for dashboards.
             <br />
-            spicals : animations - my design - charts.
+            Spicals : animations - my design - charts.
           </p>
           <div class="icons">
             <a
@@ -86,7 +87,7 @@
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
             <img src="../assets/work3.webp" alt="" />
-            <h2>RTC And RTM</h2>
+            <h2>RTM</h2>
             <div class="info">
               <div class="icons">
                 <a
@@ -107,26 +108,24 @@
           </div>
         </div>
         <div class="desc col-lg-6">
-          <h2>RTC And RTM</h2>
-          <i>date: 2021</i>
+          <h2>RTM</h2>
+          <i>Date: 2021</i>
           <p>
-            video and messenger using Agora api, Vue3, Pinia, Bootstrap and
-            SASS.
+            Real time messenger without database using Agora api, Vue3, Pinia,
+            Bootstrap and SASS.
             <br />
             Spicals : My design - API.
-            <br />
-            note : The video call is invalid until I activate it.
           </p>
           <div class="icons">
             <a
-              href="https://github.com/wissam333/Agora-RTC-RTM"
+              href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer"
               target="_blank"
             >
               <font-awesome-icon icon="fa-brands fa-github"
             /></a>
 
             <a
-              href="https://wissam333.github.io/Agora-RTC-RTM/#/"
+              href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/"
               target="_blank"
             >
               <font-awesome-icon icon="fa-solid fa-rocket" />
@@ -138,12 +137,12 @@
       <div class="row">
         <div class="desc col-lg-6">
           <h2>Gym</h2>
-          <i>date: 2022</i>
+          <i>Date: 2022</i>
           <p>
-            static website using vue3,Not complete but I wanted to put a site
+            Static website using vue3,Not complete but I wanted to put a site
             that was not of my own design
             <br />
-            spicals : static - clean.
+            Spicals : static - clean.
           </p>
           <div class="icons">
             <a href="https://github.com/wissam333/Gym" target="_blank">
