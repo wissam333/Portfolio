@@ -87,18 +87,18 @@
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
             <img src="../assets/work3.webp" alt="" />
-            <h2>RTM</h2>
+            <h2>RTM And RTC</h2>
             <div class="info">
               <div class="icons">
                 <a
-                  href="https://github.com/wissam333/Agora-RTC-RTM"
+                  href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer"
                   target="_blank"
                 >
                   <font-awesome-icon icon="fa-brands fa-github"
                 /></a>
 
                 <a
-                  href="https://wissam333.github.io/Agora-RTC-RTM/#/"
+                  href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/"
                   target="_blank"
                 >
                   <font-awesome-icon icon="fa-solid fa-rocket" />
@@ -108,11 +108,15 @@
           </div>
         </div>
         <div class="desc col-lg-6">
-          <h2>RTM</h2>
-          <i>Date: 2021</i>
+          <h2>RTM And RTC</h2>
+          <i>Date: 2022</i>
           <p>
             Real time messenger without database using Agora api, Vue3, Pinia,
             Bootstrap and SASS.
+            <br />
+            Update: Added RTC that needs new token every 24 hours.
+            <br />
+            note: token update is manual.
             <br />
             Spicals : My design - API.
           </p>
