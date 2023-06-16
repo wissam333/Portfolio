@@ -9,20 +9,9 @@
       <h2 class="headline">My Skills</h2>
       <div class="container">
         <div class="row">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            class="section section1 col-lg-6"
-          >
-            <vueper-slides
-              :bullets="false"
-              :arrows="false"
-              :infinite="true"
-              :visible-slides="3"
-              :slide-ratio="1 / 4"
-              :autoplay="true"
-              :duration="1500"
-            >
+          <div data-aos="fade-right" data-aos-duration="2000" class="section section1 col-lg-6">
+            <vueper-slides :bullets="false" :arrows="false" :infinite="true" :visible-slides="3" :slide-ratio="1 / 4"
+              :autoplay="true" :duration="1500">
               <vueper-slide>
                 <template #content>
                   <font-awesome-icon icon="fa-brands fa-html5" />
@@ -72,49 +61,27 @@
               </vueper-slide>
             </vueper-slides>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="2000"
-            class="section section2 col-lg-6"
-          >
+          <div data-aos="fade-left" data-aos-duration="2000" class="section section2 col-lg-6">
             <div class="exp">
               <h3>My Journuy</h3>
               <div class="exp_years_desc">
                 <ul class="exp_years">
-                  <li
-                    @click="active = '2018'"
-                    :class="active == '2018' ? 'active' : ''"
-                  >
+                  <li @click="active = '2018'" :class="active == '2018' ? 'active' : ''">
                     2018
                   </li>
-                  <li
-                    @click="active = '2019'"
-                    :class="active == '2019' ? 'active' : ''"
-                  >
+                  <li @click="active = '2019'" :class="active == '2019' ? 'active' : ''">
                     2019
                   </li>
-                  <li
-                    @click="active = '2020'"
-                    :class="active == '2020' ? 'active' : ''"
-                  >
+                  <li @click="active = '2020'" :class="active == '2020' ? 'active' : ''">
                     2020
                   </li>
-                  <li
-                    @click="active = '2021'"
-                    :class="active == '2021' ? 'active' : ''"
-                  >
+                  <li @click="active = '2021'" :class="active == '2021' ? 'active' : ''">
                     2021
                   </li>
-                  <li
-                    @click="active = '2022'"
-                    :class="active == '2022' ? 'active' : ''"
-                  >
+                  <li @click="active = '2022'" :class="active == '2022' ? 'active' : ''">
                     2022
                   </li>
-                  <li
-                    @click="active = 'soon'"
-                    :class="active == 'soon' ? 'active' : ''"
-                  >
+                  <li @click="active = 'soon'" :class="active == 'soon' ? 'active' : ''">
                     Soon
                   </li>
                 </ul>
@@ -182,14 +149,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../style/reset.scss";
+
 .skills_wrap {
   .wrap {
     background-color: #141415;
     position: relative;
+
     .divider {
       margin: auto;
       width: 160px;
       height: 50px;
+
       .ball {
         position: absolute;
         width: 0;
@@ -200,24 +170,31 @@ export default {
       }
     }
   }
+
   .skills {
     overflow: hidden;
     background-color: #141415;
+
     @media (min-width: 991px) {
       height: 100vh;
     }
+
     h2 {
       padding: 5vw;
+
       @media (max-width: 768px) {
         padding: 30px;
       }
     }
+
     .container {
       .section {
         margin: auto;
+
         @media (max-width: 991px) {
           margin-bottom: 100px;
         }
+
         &.section1 {
           svg {
             width: 100%;
@@ -225,10 +202,12 @@ export default {
             color: #696497;
           }
         }
+
         &.section2 {
           padding-left: 36px;
         }
       }
+
       .exp {
         h3 {
           color: #fff;
@@ -236,8 +215,10 @@ export default {
           font-size: 14px;
           font-weight: 900;
         }
+
         .exp_years_desc {
           display: flex;
+
           .exp_years {
             li {
               color: #fff;
@@ -247,21 +228,25 @@ export default {
               border-left: 3px solid #5d598940;
               cursor: pointer;
               transition: all 0.2s linear;
+
               &.active {
                 color: #918bcc;
                 border-left: 3px solid #918bcc;
               }
+
               &:hover {
                 color: #918bcc;
                 background-color: #918bcc26;
               }
             }
           }
+
           .exp_desc {
             color: #c2c2c2;
             font-size: 20px;
             padding: 20px;
             line-height: 2.5vw;
+
             @media (max-width: 768px) {
               font-size: 14px;
               line-height: 5.5vw;

@@ -28,10 +28,7 @@
       </div>
     </div>
     <div class="cv">
-      <a
-        href="https://github.com/wissam333/Portfolio/raw/gh-pages/CV.pdf"
-        download="Wissam CV"
-      >
+      <a href="https://github.com/wissam333/Portfolio/raw/gh-pages/CV.pdf" download="Wissam CV">
         <button class="btn btn-md">Download CV</button>
       </a>
     </div>
@@ -52,12 +49,14 @@ export default {
 <style lang="scss" scoped>
 @import "../style/stars.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
 .home {
   position: relative;
   overflow: hidden;
   display: flex;
   height: 100vh;
   justify-content: space-between;
+
   .mountains {
     position: absolute;
     width: 100%;
@@ -96,20 +95,25 @@ export default {
         transform: scale(1);
       }
     }
+
     color: #fff;
     font-weight: bolder;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Kdam Thmor Pro",
+    sans-serif;
     font-size: 4rem;
     display: flex;
     align-items: center;
     padding: 5vw;
     z-index: 3;
+
     @media (max-width: 768px) {
       font-size: 8.9vw;
     }
+
     .glitch {
       user-select: none;
       position: relative;
+
       &:before,
       &:after {
         display: block;
@@ -121,21 +125,24 @@ export default {
         width: 100%;
         opacity: 0.8;
       }
+
       &:after {
         color: #f0f;
         z-index: -2;
       }
+
       &:before {
         color: #0ff;
         z-index: -1;
       }
+
       &:hover {
         &:before {
           animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
         }
+
         &:after {
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
-            infinite;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
         }
       }
     }
@@ -144,56 +151,68 @@ export default {
       0% {
         transform: translate(0);
       }
+
       20% {
         transform: translate(-5px, 5px);
       }
+
       40% {
         transform: translate(-5px, -5px);
       }
+
       60% {
         transform: translate(5px, 5px);
       }
+
       80% {
         transform: translate(5px, -5px);
       }
+
       to {
         transform: translate(0);
       }
     }
+
     button {
       font-size: 1.2rem;
       border: 2px solid #fff;
       letter-spacing: 1px;
+
       a {
         text-decoration: none;
         color: #fff;
       }
+
       @media (max-width: 768px) {
         font-size: 4vw;
       }
+
       &:hover {
         background-color: #69649c;
       }
     }
   }
+
   .cv {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 9;
+
     button {
       font-size: 20px;
       color: #fff;
       border: 2px solid #fff;
       letter-spacing: 1px;
+
       @media (max-width: 768px) {
         font-size: 16px;
       }
+
       &:hover {
         color: #fff;
         background-color: #69649c;
       }
     }
   }
-}
-</style>
+}</style>

@@ -3,14 +3,8 @@
     <!--preloader-->
     <div class="preloader" :class="loaded == true ? 'loaded' : ''">
       <div class="loader" :class="loaded == true ? 'loaded' : ''"></div>
-      <div
-        class="loader-section section-left"
-        :class="loaded == true ? 'loaded' : ''"
-      ></div>
-      <div
-        class="loader-section section-right"
-        :class="loaded == true ? 'loaded' : ''"
-      ></div>
+      <div class="loader-section section-left" :class="loaded == true ? 'loaded' : ''"></div>
+      <div class="loader-section section-right" :class="loaded == true ? 'loaded' : ''"></div>
     </div>
 
     <AppNavbar></AppNavbar>
@@ -44,11 +38,9 @@ export default {
     });
 
     //hide scroll down
-    window.onscroll = function (ev) {
-      if (
-        window.innerHeight + window.pageYOffset >=
-        document.body.offsetHeight
-      ) {
+    window.onscroll = () => {
+      if (window.innerHeight + window.pageYOffset >=
+        document.body.offsetHeight) {
         document.getElementById("goDown").innerHTML = "";
       }
     };
@@ -59,6 +51,7 @@ export default {
 @import "./style/reset.scss";
 
 #app {
+
   /*preloder start*/
   .preloader {
     position: fixed;
@@ -67,10 +60,12 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 999;
+
     &.loaded {
       visibility: hidden;
       transition: all 0.3s 2s ease-in-out;
     }
+
     .loader {
       display: block;
       position: relative;
@@ -85,10 +80,12 @@ export default {
       z-index: 101;
       -webkit-animation: spin 2s ease-in-out infinite;
       animation: spin 2s ease-in-out infinite;
+
       &.loaded {
         opacity: 0;
         transition: all 0.3s 2s ease-in-out;
       }
+
       &:before {
         content: "";
         position: absolute;
@@ -102,6 +99,7 @@ export default {
         -webkit-animation: spin 3s ease-in infinite;
         animation: spin 3s ease-in infinite;
       }
+
       &:after {
         content: "";
         position: absolute;
@@ -116,6 +114,7 @@ export default {
         animation: spin 1.5s ease-in-out infinite;
       }
     }
+
     .loader-section {
       position: fixed;
       top: 0;
@@ -123,13 +122,16 @@ export default {
       height: 100%;
       background-color: #222;
       z-index: 100;
+
       &.section-left {
         left: 0;
+
         &.loaded {
           transform: translateX(-100%);
           transition: all 0.7s 2.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
       }
+
       &.section-right {
         right: 0;
 
@@ -140,36 +142,43 @@ export default {
       }
     }
   }
+
   @-webkit-keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
       transform: rotate(0deg);
     }
+
     100% {
       -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
+
   @keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
       transform: rotate(0deg);
     }
+
     100% {
       -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
+
   .view {
     margin-left: 9rem;
+
     @media (max-width: 768px) {
       margin-left: 0;
     }
   }
+
   .goDown {
     display: flex;
     flex-direction: column;
@@ -185,34 +194,42 @@ export default {
     animation: goUpDownAnim 2s ease-in-out infinite;
     text-decoration: none;
     z-index: 9;
+
     &:hover {
       color: #fff;
     }
+
     p {
       font-size: 16px;
       writing-mode: vertical-rl;
       text-orientation: mixed;
       margin: 0;
+
       @media (max-width: 768px) {
         font-size: 12px;
       }
     }
+
     @keyframes goUpDownAnim {
       0% {
         transform: translateY(0);
       }
+
       50% {
         transform: translateY(15px);
       }
+
       100% {
         transform: translateY(0);
       }
     }
+
     svg {
       font-size: 20px;
       margin: 5px 5px 0px 5px;
       transition: all 0.2s ease-in-out;
       color: #fff;
+
       @media (max-width: 768px) {
         font-size: 15px;
       }

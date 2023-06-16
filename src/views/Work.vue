@@ -6,21 +6,13 @@
         <h2 class="headline">My Work</h2>
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
-            <img src="../assets/work1.webp" alt="" />
+            <img src="../assets/work1.png" alt="" />
             <h2>Old website</h2>
             <div class="info">
               <div class="icons">
-                <a
-                  href="https://github.com/wissam333/project-w"
-                  target="_blank"
-                >
-                  <font-awesome-icon icon="fa-brands fa-github"
-                /></a>
-
-                <a
-                  href="http://marco-arkento.000webhostapp.com/"
-                  target="_blank"
-                >
+                <a href="https://github.com/wissam333/e-commerce" target="_blank">
+                  <font-awesome-icon icon="fa-brands fa-github" /></a>
+                <a href="https://wissam333.github.io/e-commerce/" target="_blank">
                   <font-awesome-icon icon="fa-solid fa-rocket" />
                 </a>
               </div>
@@ -28,20 +20,18 @@
           </div>
         </div>
         <div class="desc col-lg-6">
-          <h2>Old website</h2>
-          <i>Date: 2019</i>
+          <h2>E-commerce Website</h2>
+          <i>Date: 2023</i>
           <p>
-            A simple design I made for training purposes using HTML, CSS, JS,
-            Bootstrap and SASS, i learned a lot while coding this website,
+           Built This Website Using : Vue3, vite, pinia, Firebase, Sass, Bootstrap And Mdb, AOS library, Swipper, FakeStoreApi.
             <br />
-            Spicals : animations - pure js without framwork - my design.
+            Spicals : Cart Management - Account Management - Get Item Details - Shop By Category
           </p>
           <div class="icons">
-            <a href="https://github.com/wissam333/project-w" target="_blank">
-              <font-awesome-icon icon="fa-brands fa-github"
-            /></a>
+            <a href="https://github.com/wissam333/e-commerce" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" /></a>
 
-            <a href="http://marco-arkento.000webhostapp.com/" target="_blank">
+            <a href="https://wissam333.github.io/e-commerce/" target="_blank">
               <font-awesome-icon icon="fa-solid fa-rocket" />
             </a>
           </div>
@@ -58,12 +48,8 @@
             Spicals : animations - my design - charts.
           </p>
           <div class="icons">
-            <a
-              href="https://github.com/wissam333/dashboard-project-"
-              target="_blank"
-            >
-              <font-awesome-icon icon="fa-brands fa-github"
-            /></a>
+            <a href="https://github.com/wissam333/dashboard-project-" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" /></a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -72,12 +58,8 @@
             <h2>Dashboard</h2>
             <div class="info">
               <div class="icons">
-                <a
-                  href="https://github.com/wissam333/dashboard-project-"
-                  target="_blank"
-                >
-                  <font-awesome-icon icon="fa-brands fa-github"
-                /></a>
+                <a href="https://github.com/wissam333/dashboard-project-" target="_blank">
+                  <font-awesome-icon icon="fa-brands fa-github" /></a>
               </div>
             </div>
           </div>
@@ -90,17 +72,10 @@
             <h2>RTM And RTC</h2>
             <div class="info">
               <div class="icons">
-                <a
-                  href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer"
-                  target="_blank"
-                >
-                  <font-awesome-icon icon="fa-brands fa-github"
-                /></a>
+                <a href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer" target="_blank">
+                  <font-awesome-icon icon="fa-brands fa-github" /></a>
 
-                <a
-                  href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/"
-                  target="_blank"
-                >
+                <a href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/" target="_blank">
                   <font-awesome-icon icon="fa-solid fa-rocket" />
                 </a>
               </div>
@@ -121,17 +96,10 @@
             Spicals : My design - API.
           </p>
           <div class="icons">
-            <a
-              href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer"
-              target="_blank"
-            >
-              <font-awesome-icon icon="fa-brands fa-github"
-            /></a>
+            <a href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github" /></a>
 
-            <a
-              href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/"
-              target="_blank"
-            >
+            <a href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/" target="_blank">
               <font-awesome-icon icon="fa-solid fa-rocket" />
             </a>
           </div>
@@ -150,8 +118,7 @@
           </p>
           <div class="icons">
             <a href="https://github.com/wissam333/Gym" target="_blank">
-              <font-awesome-icon icon="fa-brands fa-github"
-            /></a>
+              <font-awesome-icon icon="fa-brands fa-github" /></a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -161,8 +128,7 @@
             <div class="info">
               <div class="icons">
                 <a href="https://github.com/wissam333/Gym" target="_blank">
-                  <font-awesome-icon icon="fa-brands fa-github"
-                /></a>
+                  <font-awesome-icon icon="fa-brands fa-github" /></a>
               </div>
             </div>
           </div>
@@ -178,6 +144,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../style/reset.scss";
+
 .work {
   position: relative;
   overflow: hidden;
@@ -185,6 +152,7 @@ export default {
   background: url("../assets/background.webp") center no-repeat fixed;
   background-size: cover;
   z-index: 1;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -196,32 +164,39 @@ export default {
     background-image: linear-gradient(#141415, #000000ad);
     z-index: 2;
   }
+
   .row {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
     z-index: 3;
+
     .headline {
       padding: 3vw;
       margin-bottom: 50px;
       margin-top: 50px;
       z-index: 4;
     }
+
     .col-lg-6 {
       z-index: 3;
+
       .image {
         position: relative;
         border: 1px solid #fff;
         border-radius: 8px;
         overflow: hidden;
         background-color: #918bcc;
+
         img {
           width: 100%;
           height: 100%;
+
           @media (max-width: 991px) {
             opacity: 0.5;
           }
         }
+
         .info {
           display: none;
           position: absolute;
@@ -230,12 +205,15 @@ export default {
           color: #fff;
           text-align: center;
           z-index: 4;
+
           @media (max-width: 991px) {
             display: block;
           }
+
           .icons {
             display: flex;
             justify-content: center;
+
             a {
               position: relative;
               display: block;
@@ -249,11 +227,13 @@ export default {
               color: #666;
               transition: 0.5s;
               margin: 10px;
+
               @media (max-width: 425px) {
                 width: 35px;
                 height: 35px;
                 line-height: 30px;
               }
+
               &::before {
                 content: "";
                 position: absolute;
@@ -267,12 +247,15 @@ export default {
                 transform: scale(0.9);
                 z-index: -1;
               }
+
               &:hover::before {
                 transform: scale(1.1);
                 box-shadow: 0 0 15px #fff;
               }
+
               svg {
                 color: #fff;
+
                 @media (max-width: 425px) {
                   font-size: 20px;
                 }
@@ -280,6 +263,7 @@ export default {
             }
           }
         }
+
         h2 {
           display: none;
           color: #fff;
@@ -291,26 +275,31 @@ export default {
           font-size: 6vw;
           font-weight: 900;
           margin-top: 15px;
+
           @media (max-width: 991px) {
             display: block;
           }
         }
       }
+
       &.desc {
         @media (max-width: 991px) {
           display: none;
         }
+
         h2 {
           color: #fff;
           font-size: 30px;
           font-weight: 900;
           margin-bottom: 30px;
         }
+
         i {
           color: #c1c1c1;
           font-size: 14px;
           display: block;
         }
+
         p {
           padding: 5px;
           color: #fff;
@@ -318,9 +307,11 @@ export default {
           margin: 0;
           display: block;
         }
+
         .icons {
           display: flex;
           justify-content: center;
+
           a {
             position: relative;
             display: block;
@@ -334,6 +325,7 @@ export default {
             color: #666;
             transition: 0.3s;
             margin: 10px;
+
             &::before {
               content: "";
               position: absolute;
@@ -347,10 +339,12 @@ export default {
               transform: scale(0.9);
               z-index: -1;
             }
+
             &:hover::before {
               transform: scale(1.1);
               box-shadow: 0 0 15px #fff;
             }
+
             svg {
               color: #fff;
             }
