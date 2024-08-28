@@ -149,7 +149,7 @@
         <div class="desc col-lg-6">
           <h2>Dqiqa</h2>
           <i>Date: 2024</i>
-          <p>Ecommerce and delivery</p>
+
           <div class="icons">
             <a href="https://dqiqa.ly/" target="_blank">
               <font-awesome-icon icon="fa-solid fa-rocket" />
@@ -214,8 +214,6 @@
         <div class="desc col-lg-6">
           <h2>Butterfly Caffe</h2>
           <i>Date: 2024</i>
-          <p>Ecommerce for caffe</p>
-          <p>Still working on it...</p>
           <div class="icons">
             <a href="https://butterflycaffe.net/" target="_blank">
               <font-awesome-icon icon="fa-solid fa-rocket"

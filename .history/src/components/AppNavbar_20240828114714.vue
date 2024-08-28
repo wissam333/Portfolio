@@ -57,13 +57,13 @@
       </li>
     </ul>
     <!--music-->
-    <!-- <div class="music" @click="play()">
+    <div class="music" @click="play()">
       <font-awesome-icon icon="fa-solid fa-music" />
       <span id="musicText"> Music?</span>
       <audio id="music">
         <source src="../assets/michael-buble.mp3" />
       </audio>
-    </div> -->
+    </div>
   </nav>
 </template>
 <script>

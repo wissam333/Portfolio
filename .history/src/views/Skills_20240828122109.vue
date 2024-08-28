@@ -81,9 +81,9 @@
                   <li @click="active = '2022'" :class="active == '2022' ? 'active' : ''">
                     2022
                   </li>
-                  <!-- <li @click="active = 'soon'" :class="active == 'soon' ? 'active' : ''">
+                  <li @click="active = 'soon'" :class="active == 'soon' ? 'active' : ''">
                     Soon
-                  </li> -->
+                  </li>
                 </ul>
 
                 <div class="exp_desc" v-if="active == '2018'">

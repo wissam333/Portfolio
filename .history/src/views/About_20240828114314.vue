@@ -4,7 +4,7 @@
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        class="paragraph"
+        class="paragraph col-sm-6"
       >
         <h2 class="headline">ME, Myself And I</h2>
         <p>
@@ -58,9 +58,9 @@ export default {
   background-image: linear-gradient(#0b0a0c, black);
   display: flow-root;
 
-  // @media (min-width: 1400px) {
-  //   min-height: 100vh;
-  // }
+  @media (min-width: 1400px) {
+    height: 100vh;
+  }
 
   @media (max-width: 768px) {
     padding: 30px;
@@ -69,7 +69,7 @@ export default {
   .me {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
 
     .paragraph {

@@ -7,7 +7,7 @@
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
             <img src="../assets/work1.png" alt="" />
-            <h2>E-commerce Website</h2>
+            <h2>Old website</h2>
             <div class="info">
               <div class="icons">
                 <a
@@ -47,7 +47,6 @@
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="desc col-lg-6">
           <h2>Gulf-if</h2>
@@ -67,18 +66,20 @@
         <div class="col-lg-6">
           <div class="image" data-aos="fade-left" data-aos-duration="2000">
             <img src="../assets/new1.png" alt="" />
-            <h2>Gulf-if</h2>
+            <h2>Dashboard</h2>
             <div class="info">
               <div class="icons">
-                <a href="https://gulf-if.com/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
+                <a
+                  href="https://github.com/wissam333/dashboard-project-"
+                  target="_blank"
+                >
+                  <font-awesome-icon icon="fa-brands fa-github"
                 /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
@@ -95,11 +96,30 @@
           </div>
         </div>
         <div class="desc col-lg-6">
-          <h2>Grand Gold</h2>
-          <i>Date: 2024</i>
-
+          <h2>RTM And RTC</h2>
+          <i>Date: 2022</i>
+          <p>
+            Real time messenger without database using Agora api, Vue3, Pinia,
+            Bootstrap and SASS.
+            <br />
+            Update: Added RTC that needs new token every 24 hours.
+            <br />
+            note: token update is manual.
+            <br />
+            Spicals : My design - API.
+          </p>
           <div class="icons">
-            <a href="https://grandgold-int.net/" target="_blank">
+            <a
+              href="https://github.com/wissam333/Agora-RTM-Peer-To-Peer"
+              target="_blank"
+            >
+              <font-awesome-icon icon="fa-brands fa-github"
+            /></a>
+
+            <a
+              href="https://wissam333.github.io/Agora-RTM-Peer-To-Peer/"
+              target="_blank"
+            >
               <font-awesome-icon icon="fa-solid fa-rocket" />
             </a>
           </div>
@@ -108,128 +128,28 @@
 
       <div class="row">
         <div class="desc col-lg-6">
-          <h2>Royal Art Factory</h2>
-          <i>Date: 2024</i>
+          <h2>Gym</h2>
+          <i>Date: 2022</i>
+          <p>
+            Static website using vue3,Not complete but I wanted to put a site
+            that was not of my own design
+            <br />
+            Spicals : static - clean.
+          </p>
           <div class="icons">
-            <a href="https://royalartfactory.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket"
+            <a href="https://github.com/wissam333/Gym" target="_blank">
+              <font-awesome-icon icon="fa-brands fa-github"
             /></a>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="image" data-aos="fade-left" data-aos-duration="2000">
-            <img src="../assets/new3.png" alt="" />
-            <h2>Royal Art Factory</h2>
+            <img src="../assets/work4.webp" alt="" />
+            <h2>Gym</h2>
             <div class="info">
               <div class="icons">
-                <a href="https://royalartfactory.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-          <div class="image">
-            <img src="../assets/new5.png" alt="" />
-            <h2>Dqiqa</h2>
-
-            <div class="info">
-              <div class="icons">
-                <a href="https://dqiqa.ly/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="desc col-lg-6">
-          <h2>Dqiqa</h2>
-          <i>Date: 2024</i>
-          <p>Ecommerce and delivery</p>
-          <div class="icons">
-            <a href="https://dqiqa.ly/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="desc col-lg-6">
-          <h2>Albaydhani</h2>
-          <i>Date: 2024</i>
-          <div class="icons">
-            <a href="https://www.albaydhani.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket"
-            /></a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="image" data-aos="fade-left" data-aos-duration="2000">
-            <img src="../assets/new6.png" alt="" />
-            <h2>Albaydhani</h2>
-            <div class="info">
-              <div class="icons">
-                <a href="https://www.albaydhani.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-          <div class="image">
-            <img src="../assets/new7.png" alt="" />
-            <h2>Elite interiorsuae</h2>
-
-            <div class="info">
-              <div class="icons">
-                <a href="https://eliteinteriorsuae.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="desc col-lg-6">
-          <h2>Elite interiorsuae</h2>
-          <i>Date: 2024</i>
-
-          <div class="icons">
-            <a href="https://eliteinteriorsuae.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="desc col-lg-6">
-          <h2>Butterfly Caffe</h2>
-          <i>Date: 2024</i>
-          <p>Ecommerce for caffe</p>
-          <p>Still working on it...</p>
-          <div class="icons">
-            <a href="https://butterflycaffe.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket"
-            /></a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="image" data-aos="fade-left" data-aos-duration="2000">
-            <img src="../assets/new4.png" alt="" />
-            <h2>Butterfly Caffe</h2>
-            <div class="info">
-              <div class="icons">
-                <a href="https://butterflycaffe.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
+                <a href="https://github.com/wissam333/Gym" target="_blank">
+                  <font-awesome-icon icon="fa-brands fa-github"
                 /></a>
               </div>
             </div>

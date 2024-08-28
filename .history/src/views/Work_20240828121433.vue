@@ -149,7 +149,7 @@
         <div class="desc col-lg-6">
           <h2>Dqiqa</h2>
           <i>Date: 2024</i>
-          <p>Ecommerce and delivery</p>
+
           <div class="icons">
             <a href="https://dqiqa.ly/" target="_blank">
               <font-awesome-icon icon="fa-solid fa-rocket" />

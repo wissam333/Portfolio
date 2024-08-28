@@ -28,10 +28,7 @@
       </div>
     </div>
     <div class="cv">
-      <a
-        href="https://github.com/wissam333/Portfolio/raw/gh-pages/CV-New.pdf"
-        download="Wissam CV"
-      >
+      <a href="https://github.com/wissam333/Portfolio/raw/gh-pages/CV-New.pdf" download="Wissam CV">
         <button class="btn btn-md">Download CV</button>
       </a>
     </div>
@@ -101,7 +98,8 @@ export default {
 
     color: #fff;
     font-weight: bolder;
-    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Kdam Thmor Pro",
+    sans-serif;
     font-size: 4rem;
     display: flex;
     align-items: center;
@@ -144,8 +142,7 @@ export default {
         }
 
         &:after {
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
-            infinite;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
         }
       }
     }
@@ -218,5 +215,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>

@@ -4,7 +4,7 @@
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        class="paragraph"
+        class="paragraph col-sm-6"
       >
         <h2 class="headline">ME, Myself And I</h2>
         <p>
@@ -35,7 +35,7 @@
         data-aos-duration="2000"
         class="artGallery col-sm-6"
       >
-        <!-- <img src="../assets/art.webp" alt="" /> -->
+        <img src="../assets/art.webp" alt="" />
       </div>
     </div>
   </div>
@@ -58,9 +58,9 @@ export default {
   background-image: linear-gradient(#0b0a0c, black);
   display: flow-root;
 
-  // @media (min-width: 1400px) {
-  //   min-height: 100vh;
-  // }
+  @media (min-width: 1400px) {
+    height: 100vh;
+  }
 
   @media (max-width: 768px) {
     padding: 30px;

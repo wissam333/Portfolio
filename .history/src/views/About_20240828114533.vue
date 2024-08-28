@@ -58,9 +58,9 @@ export default {
   background-image: linear-gradient(#0b0a0c, black);
   display: flow-root;
 
-  // @media (min-width: 1400px) {
-  //   min-height: 100vh;
-  // }
+  @media (min-width: 1400px) {
+    min-height: 100vh;
+  }
 
   @media (max-width: 768px) {
     padding: 30px;

@@ -56,6 +56,12 @@
 
               <vueper-slide>
                 <template #content>
+                  <font-awesome-icon icon="fa-brands fa-nuxt" />
+                </template>
+              </vueper-slide>
+
+              <vueper-slide>
+                <template #content>
                   <font-awesome-icon icon="fa-brands fa-git-alt" />
                 </template>
               </vueper-slide>
@@ -81,9 +87,9 @@
                   <li @click="active = '2022'" :class="active == '2022' ? 'active' : ''">
                     2022
                   </li>
-                  <!-- <li @click="active = 'soon'" :class="active == 'soon' ? 'active' : ''">
+                  <li @click="active = 'soon'" :class="active == 'soon' ? 'active' : ''">
                     Soon
-                  </li> -->
+                  </li>
                 </ul>
 
                 <div class="exp_desc" v-if="active == '2018'">
@@ -117,14 +123,14 @@
                   nuxt, webpack, and Vutify, Also learn how to deal with backend
                   professionally.
                 </div>
-                <!-- <div class="exp_desc" v-if="active == 'soon'">
+                <div class="exp_desc" v-if="active == 'soon'">
                   I want to master Frontend field, learn WordPress and UI/UX.
                   Then I will enter the backend field to become a full stack
                   developer, And in the meantime, I'm going to study web
                   security because I have a great CTF mentor(my brother). In
                   general, I will do my best to become a superhero in the web
                   field!
-                </div> -->
+                </div>
               </div>
             </div>
           </div>

@@ -19,9 +19,9 @@
     <ul class="links">
       <router-link @click="active = 'false'" to="/"><li>Home</li></router-link>
 
-      <!-- <router-link @click="active = 'false'" to="/about">
+      <router-link @click="active = 'false'" to="/about">
         <li>About</li></router-link
-      > -->
+      >
 
       <router-link @click="active = 'false'" to="/skills">
         <li>My Skills</li></router-link
@@ -57,13 +57,13 @@
       </li>
     </ul>
     <!--music-->
-    <!-- <div class="music" @click="play()">
+    <div class="music" @click="play()">
       <font-awesome-icon icon="fa-solid fa-music" />
       <span id="musicText"> Music?</span>
       <audio id="music">
         <source src="../assets/michael-buble.mp3" />
       </audio>
-    </div> -->
+    </div>
   </nav>
 </template>
 <script>

@@ -1,41 +1,27 @@
 <template>
   <div class="about">
     <div class="me row">
-      <div
-        data-aos="fade-right"
-        data-aos-duration="2000"
-        class="paragraph"
-      >
+      <div data-aos="fade-right" data-aos-duration="2000" class="paragraph col-sm-6">
         <h2 class="headline">ME, Myself And I</h2>
         <p>
-          I am a highly motivated and passionate student with a keen interest in
-          front-end web development. I am a quick learner and have developed my
-          skills through self-learning. I am proficient in problem-solving and
-          enjoy finding creative solutions to complex issues. I am a team player
-          and enjoy collaborating with others to achieve common goals, And most
-          important I love what I do !
-          <!-- <br />
+          I’m a student at the University of Informatics Engineering located in
+          Syria, I have a serious passion for web and mobile Application, I’m
+          self-learner, hard-Worker, organized person.
+          <br />
           I’m not a UI/UX Designer (i will learn it soon) but i like to
-          design my websites like this Portfolio -->
+          design my websites like this Portfolio
         </p>
         <br />
         <br />
-        <!-- <h2 class="headline">Interests</h2>
+        <h2 class="headline">Interests</h2>
         <p class="interst_paragraph">
           At my free time I like to play video games and to draw
-          <a
-            href="https://wissam333.github.io/Portfolio/assets/art.ed1e5563.webp"
-            target="_blank"
-            ><span> this is one of my best digital drawings </span></a
-          ><font-awesome-icon icon="fa-solid fa-arrow-right" />
-        </p> -->
+          <a href="https://wissam333.github.io/Portfolio/assets/art.ed1e5563.webp" target="_blank"><span> this is one of
+              my best digital drawings </span></a><font-awesome-icon icon="fa-solid fa-arrow-right" />
+        </p>
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-duration="2000"
-        class="artGallery col-sm-6"
-      >
-        <!-- <img src="../assets/art.webp" alt="" /> -->
+      <div data-aos="fade-left" data-aos-duration="2000" class="artGallery col-sm-6">
+        <img src="../assets/art.webp" alt="" />
       </div>
     </div>
   </div>
@@ -58,9 +44,9 @@ export default {
   background-image: linear-gradient(#0b0a0c, black);
   display: flow-root;
 
-  // @media (min-width: 1400px) {
-  //   min-height: 100vh;
-  // }
+  @media (min-width: 1400px) {
+    height: 100vh;
+  }
 
   @media (max-width: 768px) {
     padding: 30px;
@@ -69,7 +55,7 @@ export default {
   .me {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
 
     .paragraph {

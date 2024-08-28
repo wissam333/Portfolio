@@ -47,7 +47,6 @@
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="desc col-lg-6">
           <h2>Gulf-if</h2>
@@ -78,7 +77,6 @@
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
           <div class="image">
@@ -119,117 +117,11 @@
         <div class="col-lg-6">
           <div class="image" data-aos="fade-left" data-aos-duration="2000">
             <img src="../assets/new3.png" alt="" />
-            <h2>Royal Art Factory</h2>
+            <h2>Gym</h2>
             <div class="info">
               <div class="icons">
-                <a href="https://royalartfactory.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-          <div class="image">
-            <img src="../assets/new5.png" alt="" />
-            <h2>Dqiqa</h2>
-
-            <div class="info">
-              <div class="icons">
-                <a href="https://dqiqa.ly/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="desc col-lg-6">
-          <h2>Dqiqa</h2>
-          <i>Date: 2024</i>
-          <p>Ecommerce and delivery</p>
-          <div class="icons">
-            <a href="https://dqiqa.ly/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="desc col-lg-6">
-          <h2>Albaydhani</h2>
-          <i>Date: 2024</i>
-          <div class="icons">
-            <a href="https://www.albaydhani.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket"
-            /></a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="image" data-aos="fade-left" data-aos-duration="2000">
-            <img src="../assets/new6.png" alt="" />
-            <h2>Albaydhani</h2>
-            <div class="info">
-              <div class="icons">
-                <a href="https://www.albaydhani.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-          <div class="image">
-            <img src="../assets/new7.png" alt="" />
-            <h2>Elite interiorsuae</h2>
-
-            <div class="info">
-              <div class="icons">
-                <a href="https://eliteinteriorsuae.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="desc col-lg-6">
-          <h2>Elite interiorsuae</h2>
-          <i>Date: 2024</i>
-
-          <div class="icons">
-            <a href="https://eliteinteriorsuae.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="desc col-lg-6">
-          <h2>Butterfly Caffe</h2>
-          <i>Date: 2024</i>
-          <p>Ecommerce for caffe</p>
-          <p>Still working on it...</p>
-          <div class="icons">
-            <a href="https://butterflycaffe.net/" target="_blank">
-              <font-awesome-icon icon="fa-solid fa-rocket"
-            /></a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="image" data-aos="fade-left" data-aos-duration="2000">
-            <img src="../assets/new4.png" alt="" />
-            <h2>Butterfly Caffe</h2>
-            <div class="info">
-              <div class="icons">
-                <a href="https://butterflycaffe.net/" target="_blank">
-                  <font-awesome-icon icon="fa-solid fa-rocket"
+                <a href="https://github.com/wissam333/Gym" target="_blank">
+                  <font-awesome-icon icon="fa-brands fa-github"
                 /></a>
               </div>
             </div>

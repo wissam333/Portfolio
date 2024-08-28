@@ -9,7 +9,7 @@
       </div>
 
       <div class="part-right">
-        <span> Made with </span>
+        <span> Made with fkn </span>
         <font-awesome-icon icon="fa-solid fa-heart" />
 
         <span> By Wissam Najjom </span>

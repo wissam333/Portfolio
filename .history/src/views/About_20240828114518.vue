@@ -59,7 +59,7 @@ export default {
   display: flow-root;
 
   // @media (min-width: 1400px) {
-  //   min-height: 100vh;
+  //   height: 100vh;
   // }
 
   @media (max-width: 768px) {
